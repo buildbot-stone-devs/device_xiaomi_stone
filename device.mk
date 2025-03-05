@@ -7,6 +7,12 @@
 # BCR
 $(call inherit-product-if-exists, vendor/bcr/bcr.mk)
 
+# Dolby
+$(call inherit-product-if-exists, hardware/dolby/dolby.mk)
+
+# Viper
+$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
@@ -18,9 +24,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch.mk)
-
-# Call the ViperFX Config
-$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
