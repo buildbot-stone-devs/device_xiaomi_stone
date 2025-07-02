@@ -28,12 +28,6 @@ MATRIXX_CHIPSET := SM6375
 MATRIXX_BATTERY := 5000mah
 MATRIXX_DISPLAY := 1080x2400
 
-# To include Gapps 
-WITH_GMS := true
-
-# To Build Google(Dailer, Message, Phone) and BCR
-WITH_GMS_COMMS_SUITE := true
-
 PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := stone
 PRODUCT_MANUFACTURER := Xiaomi
