@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Datura
-PRODUCT_PACKAGES += Datura
-
 # Dolby
 $(call inherit-product-if-exists, hardware/dolby/dolby.mk)
 
